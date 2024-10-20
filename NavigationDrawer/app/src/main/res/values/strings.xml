@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Emergency Call</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="my_map_api_key">AIzaSyDon-mrs_gRl-ZLUIxkpRxoArdKMYiKulU</string>
+    <string name="channel_name">Emergency Notifications</string>
+    <string name="channel_description">Channel for emergency notifications</string>
+<string name="emergency_drills">
+    Emergency drills are practice exercises designed to prepare individuals and
+    organizations for real-life emergency situations. These drills simulate
+    scenarios such as fires, earthquakes, lockdowns, and other emergencies
+    to help participants understand how to respond effectively and safely
+</string>
+    <string-array name="emergency">
+        <item>Medical Emergencies</item>
+        <item>Natural Disasters</item>
+        <item>Fire Emergencies</item>
+        <item>Public Safety Emergencies</item>
+        <item>Transportation Emergencies</item>
+    </string-array>
+    <string-array name="medical_contact">
+        <item>0975577758</item>
+        <item>0917481145</item>
+        <item>0975101822</item>
+    </string-array>
+
+    <string-array name="natural_contact">
+        <item>0995530297</item>
+        <item>0978075392</item>
+        <item>0942770586</item>
+    </string-array>
+    <string-array name="fire_contact">
+        <item>0943276108</item>
+        <item>0943925992</item>
+        <item>0934478593</item>
+    </string-array>
+    <string-array name="safety_contact">
+        <item>0933031633</item>
+        <item>0904593355</item>
+        <item>0942229483</item>
+    </string-array>
+    <string-array name="transportation_contact">
+        <item>0936635498</item>
+        <item>0934355394</item>
+        <item>0927839416</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="tip_image">THis is tip for image view</string>
+</resources>

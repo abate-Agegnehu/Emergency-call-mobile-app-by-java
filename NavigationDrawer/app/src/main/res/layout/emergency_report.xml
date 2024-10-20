@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report"
+    android:background="#686D76"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Report"
+        android:textSize="30sp"
+        android:textColor="#EEF7FF"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:backgroundTint="#EEEEEE"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Contact Number"
+        android:inputType="phone"
+        android:backgroundTint="#EEEEEE"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmergencyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Type"
+        android:backgroundTint="#EEEEEE"
+
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EEEEEE"
+
+        android:layout_below="@id/editTextEmergencyType"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EEEEEE"
+
+            android:hint="Details of the Emergency"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:background="@null"
+        android:padding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Report"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1679AB"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/textInputLayoutDetails"
+        android:padding="15dp"/>
+
+</RelativeLayout>

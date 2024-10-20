@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#686D76"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/contact_info"
+        android:elevation="2dp"
+        android:padding="4dp"
+        android:textAlignment="viewStart"
+        android:background="#686D76"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/contact_list_number"
+            android:text="2939393"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/call"
+            android:textSize="14sp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_info">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/ligthblack"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

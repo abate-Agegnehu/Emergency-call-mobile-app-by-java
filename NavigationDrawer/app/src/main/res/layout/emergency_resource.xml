@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#686D76">
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Resource Type"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+
+
+    <GridView
+        android:id="@+id/gridViewResources"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#686D76"
+        android:numColumns="2"
+        android:layout_below="@+id/textViewTitle"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+       />
+
+</RelativeLayout>

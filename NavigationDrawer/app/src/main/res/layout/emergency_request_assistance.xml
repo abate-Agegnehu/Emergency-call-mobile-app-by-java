@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#686D76"
+
+    tools:context=".Request">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Assistance"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:backgroundTint="#EEEEEE"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Phone Number"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EEEEEE"
+
+        android:layout_below="@id/nameEditText"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Type"
+        android:inputType="text"
+        android:backgroundTint="#EEEEEE"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/phoneEditText"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emergency Location"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EEEEEE"
+        android:layout_below="@id/typeEditText"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EEEEEE"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/locationEditText"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Details of the Emergency"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:background="@null"
+            android:padding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Assistance"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1679AB"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/textInputLayoutDetails"
+        android:padding="15dp"/>
+
+</RelativeLayout>

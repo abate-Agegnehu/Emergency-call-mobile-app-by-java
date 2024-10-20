@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/emergency_contact"
+            android:icon="@drawable/nav_contacts"
+            android:title="Emergency Contacts"/>
+
+        <item
+            android:id="@+id/emergency_report"
+            android:icon="@drawable/nav_settings"
+            android:title="Report Emergency"/>
+
+        <item
+            android:id="@+id/emergency_safety"
+            android:icon="@drawable/nav_sefety"
+            android:title="Safety Tips"/>
+
+        <item
+            android:id="@+id/emergency_map"
+            android:icon="@drawable/nav_location"
+            android:title="Emergency Map"/>
+        <item
+            android:id="@+id/emergency_notification"
+            android:icon="@drawable/nav_notification"
+            android:title="Notifications"/>
+
+        <item
+            android:id="@+id/emergency_request_assistance"
+            android:icon="@drawable/nav_request"
+            android:title="Request Assistance"/>
+        <item
+            android:id="@+id/emergency_setting"
+            android:icon="@drawable/nav_settings"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/emergency_resource"
+            android:icon="@drawable/nav_resource"
+            android:title="Emergency Resources"/>
+        <item
+            android:id="@+id/emergency_drills"
+            android:icon="@drawable/nav_drills"
+            android:title="Emergency Drills"/>
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About Us"/>
+        </menu>
+
+    </item>
+
+</menu>
